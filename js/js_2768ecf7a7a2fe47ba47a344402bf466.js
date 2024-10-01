@@ -993,6 +993,8 @@ $(document).on("click", ".select_currency a:not(.active)", function () {
 });
 $(document).on("click", ".web_it .ajax-link", function (e) {
     e.preventDefault();
+    console.log("checkkkk");
+    
     var t = $(this),
         url = t.attr("href"),
         lang = t.attr("data-lang");
