@@ -23,28 +23,16 @@ http://flickity.metafizzy.co
 .contact-custom {
     background: #ececec;
     height: 650px;
-    width: 550px;
+    width: 590px;
     margin-top: 75px;
     position: absolute;
     top: 0;
     border-top-right-radius: 26px;
     border-bottom-right-radius: 26px;
 }
-.contact-custom .contact-custom-wrapper {
-
-}
-.contact-custom .contact-custom-wrapper .contact-custom-header-text {
-
-}
-.contact-custom .contact-custom-wrapper .contact-custom-form {
-
-}
-.contact-custom .contact-custom-wrapper .contact-custom-form .contact-custom-field {
-
-}
-.contact-custom .contact-custom-wrapper .contact-custom-form .contact-custom-field .contact-custom-field-head {
-
-}
-.contact-custom .contact-custom-wrapper .contact-custom-form .contact-custom-field .contact-custom-field-text {
-
-}
+.contact-custom .contact-custom-wrapper {padding: 20p44px;}
+.contact-custom .contact-custom-wrapper .contact-custom-header-text {text-align: center;font-size: 22px;font-weight: 400;}
+.contact-custom .contact-custom-wrapper .contact-custom-form {margin-top: 40px;}
+.contact-custom .contact-custom-wrapper .contact-custom-form .contact-custom-field {display: flex;margin-bottom: 7px;font-size: 16px;}
+.contact-custom .contact-custom-wrapper .contact-custom-form .contact-custom-field .contact-custom-field-head {font-weight: 600;}
+.contact-custom .contact-custom-wrapper .contact-custom-form .contact-custom-field .contact-custom-field-text {margin-left: 10px;}
