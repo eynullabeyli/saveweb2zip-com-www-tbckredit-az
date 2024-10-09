@@ -840,6 +840,13 @@ $(document).on("click", ".web_it .all_langs a", function (e) {
     $(".all_langs").hide();
     $(".active_lang").text($(this).text());
 });
+$(document).on("click", 'a.logo', function (e) {
+    $(".content_side").animate({
+        right: "34px"
+    }, 500, function () {
+        $(".content_side").css("left", "unset");
+    });
+});
 $(document).on("click", '.main_navigator a:not(".deactive")', function (e) {
     var t = $(this),
         url = t.attr("href"),
@@ -852,6 +859,27 @@ $(document).on("click", '.main_navigator a:not(".deactive")', function (e) {
     $(".mps_item").removeClass("active");
     $(".mps_item").eq(tCi).addClass("active");
     $(".mp_video_bg").fadeOut();
+    console.log(tCi)
+    if (tCi == 2) {
+        $(".content_side").animate({
+            right: "34px"
+        }, 500, function () {
+            $(".content_side").css("left", "unset");
+        });
+    } else if (tCi == 4) {
+        $(".content_side").animate({
+            right: "34px"
+        }, 500, function () {
+            $(".content_side").css("left", "unset");
+        });
+    } else {
+        $(".content_side").animate({
+            left: "34px"
+        }, 500, function () {
+            $(".content_side").css("right", "unset");
+        });
+    }
+
     setTimeout(function () {
         $(".mps_item.active .mp_video_bg").fadeIn();
     }, 800);
